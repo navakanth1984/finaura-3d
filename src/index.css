@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #030305;
+    color: #f4f4f6;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #030305;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bef264;
+  }
+}
+
+/* Background Dynamic Ambient Caustic Glows */
+.bg-mesh-glow {
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(190, 242, 100, 0.08) 0px, transparent 50%),
+    radial-gradient(at 85% 20%, rgba(168, 85, 247, 0.09) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(34, 211, 238, 0.07) 0px, transparent 50%);
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism 2.0 with Frosted Borders */
+.glass-card {
+  background: rgba(10, 12, 18, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card:hover {
+  border-color: rgba(190, 242, 100, 0.25);
+  box-shadow: 0 10px 40px -10px rgba(190, 242, 100, 0.08);
+}
+
+.glass-card-active {
+  background: rgba(15, 18, 26, 0.85);
+  backdrop-filter: blur(32px);
+  border: 1px solid rgba(190, 242, 100, 0.4);
+  box-shadow: 0 0 50px -10px rgba(190, 242, 100, 0.18);
+}
+
+/* Viral Gradient Headings */
+.text-viral-gradient {
+  background: linear-gradient(135deg, #ffffff 10%, #f4f4f6 40%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-acid-gradient {
+  background: linear-gradient(135deg, #bef264 0%, #22d3ee 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-neon-gradient {
+  background: linear-gradient(135deg, #f43f5e 0%, #fb923c 50%, #facc15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Holographic Foil Animated Border */
+.holographic-border {
+  position: relative;
+}
+.holographic-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, #bef264, #22d3ee, #a855f7, #f43f5e, #bef264);
+  background-size: 300% 300%;
+  animation: gradientX 6s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

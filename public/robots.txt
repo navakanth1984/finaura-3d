@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Allow full crawling of all SEO semantic content, images, and models
+Allow: /models/
+Allow: /assets/
+
+# Crawl Delay
+Crawl-delay: 0
+
+# Sitemaps
+Sitemap: https://aura3d.audio/sitemap.xml

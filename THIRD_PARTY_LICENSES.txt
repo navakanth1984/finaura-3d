@@ -1,0 +1,92 @@
+================================================================================
+FINAURA 3D — THIRD PARTY OPEN SOURCE LICENSES & NOTICES
+================================================================================
+
+This software includes open source libraries, fonts, and animation frameworks
+governed by permissive open source licenses (MIT, ISC, SIL OFL 1.1) and the
+GreenSock Standard "No Charge" License.
+
+--------------------------------------------------------------------------------
+1. Three.js
+--------------------------------------------------------------------------------
+License: MIT License
+Copyright (c) 2010-2026 Three.js authors
+Website: https://threejs.org/
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+--------------------------------------------------------------------------------
+2. React & React-DOM
+--------------------------------------------------------------------------------
+License: MIT License
+Copyright (c) Meta Platforms, Inc. and affiliates.
+Website: https://react.dev/
+
+--------------------------------------------------------------------------------
+3. Lucide Icons (lucide-react)
+--------------------------------------------------------------------------------
+License: ISC License
+Copyright (c) 2022-2026 Lucide Contributors
+Website: https://lucide.dev/
+
+--------------------------------------------------------------------------------
+4. Tailwind CSS
+--------------------------------------------------------------------------------
+License: MIT License
+Copyright (c) Tailwind Labs, Inc.
+Website: https://tailwindcss.com/
+
+--------------------------------------------------------------------------------
+5. Vite
+--------------------------------------------------------------------------------
+License: MIT License
+Copyright (c) 2019-present Yuxi (Evan) You & Vite Contributors
+Website: https://vitejs.dev/
+
+--------------------------------------------------------------------------------
+6. Google Web Fonts: Syne, Space Grotesk, JetBrains Mono
+--------------------------------------------------------------------------------
+License: SIL Open Font License, Version 1.1
+- Syne: Copyright (c) 2020 Lucas Descroix (lucasdescroix.fr)
+- Space Grotesk: Copyright (c) 2020 Florian Karsten (floriankarsten.com)
+- JetBrains Mono: Copyright (c) 2020 JetBrains s.r.o.
+
+The Open Font License permits use, study, modification, and redistribution freely,
+provided fonts are not sold by themselves.
+
+--------------------------------------------------------------------------------
+7. GreenSock Animation Platform (GSAP)
+--------------------------------------------------------------------------------
+License: GreenSock Standard License / Commercial Terms
+Copyright (c) 2008-2026, GreenSock Inc. (Jack Doyle). All rights reserved.
+Website: https://gsap.com/
+License Terms: https://gsap.com/standard-license
+
+License Tier Determination:
+  [x] Standard "No Charge" License
+      Applies to websites, applications, and digital experiences that are free
+      for end-users to access without paywalls, paid subscriptions, or per-user
+      commercial fees. FINAURA 3D is deployed as a free public credit intelligence tool.
+
+  [ ] BusinessGreen Commercial License
+      Required if the software or platform is white-labeled, resold, sub-licensed,
+      or provided as a paid commercial product/service to multiple enterprise clients.
+
+Conditions:
+Use is subject to GreenSock's standard license terms. Commercial redistributions or
+fee-charging deployments must obtain an appropriate GreenSock Club membership license.
+
+================================================================================
+FINAURA 3D Procedural Assets & Synthetic Sound Engine Copyright Notice:
+All 3D procedural geometries (Villa, Car, Coin Vortex, Briefcase, Graduation Cap)
+and synthesized Web Audio oscillator algorithms were procedurally generated and
+are the exclusive intellectual property of FINAURA Financial Advisory Technologies.
+================================================================================
