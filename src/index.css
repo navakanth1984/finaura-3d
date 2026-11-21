@@ -11,18 +11,33 @@
   }
 
   /* Custom Smooth Scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
+  html {
+    --scrollbar-thumb: rgba(255, 255, 255, 0.4);
+    --scrollbar-thumb-hover: #bef264;
+    --scrollbar-track: #030305;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   }
-  ::-webkit-scrollbar-track {
-    background: #030305;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 3px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #bef264;
+
+  /* Legacy fallback for browsers without scrollbar-color */
+  @supports not (scrollbar-color: auto) {
+    html {
+      scrollbar-width: auto;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--scrollbar-track);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--scrollbar-thumb-hover);
+    }
   }
 }
 
@@ -93,6 +108,7 @@
   animation: gradientX 6s linear infinite;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   pointer-events: none;
 }
